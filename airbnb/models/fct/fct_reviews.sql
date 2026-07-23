@@ -1,8 +1,6 @@
 {{
       config (
         materialized = 'incremental',
-        incremental_strategy ='merge',
-        unique_key ='review_id',
         on_schema_change ='fail'
         )
 }}
