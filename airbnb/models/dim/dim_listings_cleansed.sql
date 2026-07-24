@@ -1,4 +1,4 @@
-WITH  src_listing AS ( 
+WITH  src_listings AS ( 
     SELECT * FROM  {{ ref('src_listings')}}
 )
 SELECT 
@@ -13,4 +13,4 @@ SELECT
     CREATED_AT,
     UPDATED_AT
 
-FROM  SRC_LISTINGS
+FROM src_listings 
